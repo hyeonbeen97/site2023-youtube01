@@ -3,15 +3,15 @@ import { Category, Videos } from "./";
 
 const MainConts = () => {
   const [selectCategory, setSelectCategory] = useState("추천");
-  const [youtubes, setYoutubes] = useState([]);
+  const [videos, setvideos] = useState([]);
 
   useEffect(() => {
     fetch(
-      // "https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=28&q=프로그래머&key=AIzaSyBmD-yNiyzU1muLrsF_Gg7FKf5HgyXfxlo",
-      "https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=28&q=프로그래머&key=AIzaSyBTyYekqKdJKfjwf6aUYLwTbtRLG_jR2H8"
+      "https://webstoryboy.github.io/site-youtube01/src/utils/test.json"
+      //`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=28&q=프로그래머&key=${process.env.REACT_APP_YOUTUBE_API_KEY}`
     )
       .then((response) => response.json())
-      .then((result) => setYoutubes(result.items))
+      .then((result) => setvideos(result.items))
       .catch((error) => console.log(error));
   }, []);
   return (
@@ -24,7 +24,7 @@ const MainConts = () => {
       </aside>
       <section id="contents">
         <h2>{selectCategory} 유튜버</h2>
-        <Videos youtubes={youtubes} />
+        <Videos videos={videos} />
       </section>
     </main>
   );
