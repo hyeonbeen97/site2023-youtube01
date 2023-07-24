@@ -21,7 +21,7 @@
         width: 100%;
         background-color: #a3b466;
         border-radius: 50px;
-        color: #fff;
+        color: #1f9103;
       }
       h3 {
         font-size: 18px;
@@ -159,18 +159,25 @@
             -webkit-box-orient: vertical;
           }
           .channel {
+            margin-top: 15px;
             width: 50%;
-            color: #000000;
+            height: 100px;
+
+            a {
+              font-size: 20px;
+              color: #000000;
+            }
           }
           .viewlink {
             width: 50%;
             text-align: right;
+            vertical-align: bottom;
           }
         }
       }
       .right {
         width: 350px;
-        background-color: #f00202;
+        border-left: 1px solid #000000;
       }
     }
   }

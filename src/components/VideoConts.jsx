@@ -41,6 +41,7 @@ const VideoConts = () => {
                 <span>조회수{viewCount}</span>
                 <span>좋아요{linkCount}</span>
               </div>
+              <div className="coment">dsdsds</div>
             </div>
           </div>
           <div className="right"></div>
