@@ -1,6 +1,7 @@
 # 유튜브 API를 이용한 사이트 입니다!
 
 ![youtube01](https://github.com/hyeonbeen97/site2023-youtube01/assets/125417850/21364f9e-dc05-4fe7-abd1-2e00414582cf)
+https://youtubeen.netlify.app
 ## 소개
 useState와 useEffect 훅을 사용하여 상태를 관리하고, 선택된 카테고리에 따라 API를 호출하여 관련된 유튜버의 비디오 리스트를 보여줍니다. 
 페이지에 접속하면 카테고리를 선택할 수 있으며, 선택된 카테고리에 따라 해당 유튜버의 비디오 목록이 동적으로 로드되는 기능이 구현되어 있습니다.
